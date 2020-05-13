@@ -1,3 +1,4 @@
+board = [" ", " ", " "]
 def turn_count(board)
   counter = 0
   board.each do |slot|
@@ -8,3 +9,4 @@ def turn_count(board)
   print "#{counter}"
 end
 
+turn_count(board)
