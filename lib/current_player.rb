@@ -9,10 +9,6 @@ def turn_count(board)
   end
   end
   puts "#{count}"
-  return count
-end
-
-turn_count(board)
 
 def current_player(count)
   if count % 2
@@ -20,4 +16,8 @@ def current_player(count)
   else
     puts "X"
   end
+end  return count
 end
+
+turn_count(board)
+
