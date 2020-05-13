@@ -2,7 +2,7 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def turn_count(board)
   count = 0
   board.each do |slot|
-    if slot == " " || if slot == ""
+    if board[slot] == " " || if board[slot] == ""
       count += 1
     end
   end
