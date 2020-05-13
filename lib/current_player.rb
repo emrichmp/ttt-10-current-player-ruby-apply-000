@@ -7,7 +7,7 @@ def turn_count(board)
     end
   end
   puts "#{count}"
-  returns count
+  return count
 end
 
 turn_count(board)
