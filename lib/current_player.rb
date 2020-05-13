@@ -1,23 +1,18 @@
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def turn_count(board)
-  count = 0
-  board.each do |slot|
-    index = slot.to_i
-    if board[index] == " " || if board[index] == ""
-      count += 1
+  turns = 0
+  board.each do |space|
+    if space == "X" || space == "O"
+      turns += 1
     end
   end
-  end
-  puts "#{count}"
-
-def current_player(count)
-  if count % 2
-    puts "O"
-  else
-    puts "X"
-  end
-end  return count
+  return turns
 end
 
-turn_count(board)
-
+def current_player(board)
+  turns = turn_count(board)
+  if turns % 2 == 0
+    return "X"
+  else
+    return "O"
+  end
+end
