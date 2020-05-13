@@ -1,5 +1,4 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
 def turn_count(board)
   count = 0
   board.each do |slot|
@@ -12,8 +11,9 @@ def turn_count(board)
   return count
 end
 
-def current_player(board)
-  count = turn_count(board)
+turn_count(board)
+
+def current_player(count)
   if count % 2
     puts "O"
   else
