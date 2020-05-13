@@ -1,12 +1,14 @@
 board = [" ", " ", " "]
 def turn_count(board)
-  counter = 0
+  count = 0
   board.each do |slot|
     if slot == " " || slot == ""
-      counter += 1
+      count += 1
     end
   end
-  puts "#{counter}"
+  puts "#{count}"
 end
 
 turn_count(board)
+
+def current_player(board)
