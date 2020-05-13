@@ -21,4 +21,4 @@ def current_player(count)
   end
 end
 
-current_player(count)
+current_player()
