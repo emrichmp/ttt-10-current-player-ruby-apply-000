@@ -20,3 +20,5 @@ def current_player(count)
     puts "X"
   end
 end
+
+current_player(count)
